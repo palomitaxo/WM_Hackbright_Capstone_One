@@ -1,0 +1,226 @@
+body {
+  background: url('blackandpurple.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+#nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #555454;
+  padding: 30px;
+  z-index: 1000;
+  font-family: "Helvetica", sans-serif;
+}
+
+#nav-container #icon {
+  width: 60px;
+  height: 60px; 
+  margin-right: 20px;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.crumb {
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 120px;
+  font-family: "Helvetica", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.nav-button {
+  margin-right: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+}
+
+.nav-button:visited {
+  color: #fff;
+  font-family: "Helvetica", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  font-size: 70px;
+  color: #f6f9fc;
+  margin-top: 250px;
+}
+
+.centered-text {
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  color: #f6f9fc;
+  margin-top: 100px;
+}
+
+@keyframes slideAndFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title,.centered-text {
+  animation: slideAndFadeIn 3s ease-out;
+  text-shadow: 4px 4px 5px rgba(255, 245, 245, 0.508);
+}
+
+#icon {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}
+
+#passwordStrength {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+ul, ul ul {
+  list-style: none;
+  margin-left: 45px;
+  color: white;
+}
+
+strong {
+  color: white;
+}
+
+#contact {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact input[type="text"],
+#contact input[type="textarea"],
+#contact input[type="checkbox"],
+#contact label {
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+}
+#contact textarea {
+  color: black;
+}
+
+#contact input[type="text"] {
+  color: black;
+}
+
+#contact input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  color: white;
+}
+
+#content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+button.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.facts-container {
+  animation: slideInFromLeft 1.5s ease-out;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px;
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.fact {
+  transition: transform 0.3s ease-out;
+  max-width: 500px;
+}
+
+.fact:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

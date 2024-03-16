@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div id="nav-container">
+        <img src="lock.png" alt="icon" id="icon">
+        <li class="crumb"><a href="./home.html">HOME</a></li>
+		<li class="crumb"><a href="./profile.html">ABOUT</a></li>
+	    <li class="crumb"><a href="./about.html">CONTACT US</a></li>
+    </div>
+<body>
+	<content>
+		<h1 class="title">PasswordPlus+</h1>
+		<p class="centered-text">Experience the ultimate in personal security – your dedicated tool ensuring your safety and security is our top priority.</p>
+
+		<h1 class="title">Free Password Strength Tool</h1>
+		<p class="centered-text"> Enter your password and assess its strength!</p>
+		<p class="centered-text"> Try to use one capital letter, one lower case letter, one symbol, one number and atleast 8 characters long!</p>
+
+		<p class="centered-text">Enter your password:</label>
+		<label for="password"></label>
+		<input type="password" id="password" oninput="checkPasswordStrengthOnly()">
+		<p id="passwordStrength"></p>
+	
+		<script src="index.js"></script>			
+		</body>
+		</html>
+
+		<h1 class="title">Why should I care about my online safety?</h1>
+
+			<li class="fade-in"><strong>Personal Privacy:</strong>
+				<ul>
+					<li>Protecting your online safety helps safeguard your personal information, preventing unauthorized access to sensitive data such as your identity, financial details, and private communications.</li>
+				</ul>
+
+			<li class="fade-in"><strong>Identity Theft Prevention:</strong>
+				<ul>
+					<li>Cybercriminals may use stolen personal information to commit identity theft, leading to financial losses, damaged credit, and legal issues. Securing your online accounts reduces the risk of falling victim to such crimes.</li>
+				</ul>
+
+			<li class="fade-in"><strong>Financial Security:</strong>
+				<ul>
+					<li>Online banking, shopping, and financial transactions have become common. Ensuring the security of your accounts and transactions helps prevent unauthorized access and financial losses.</li>
+				</ul>
+
+			<li class="fade-in"><strong>Reputation Management:</strong>
+				<ul>
+					<li>Your online presence contributes to your digital reputation. Protecting your accounts and being mindful of the information you share helps maintain a positive online image and minimizes the risk of reputational damage.</li>
+				</ul>
+
+			<li class="fade-in"><strong> Digital Footprint:</strong>
+				<ul>
+					<li>Every online action leaves a digital footprint. Being mindful of your online safety helps control the information you share, reducing the chances of unwanted data tracking, profiling, or surveillance.</li>
+				</ul>
+
+			<li class="fade-in"><strong>Cyberbullying and Harassment:</strong>
+				<ul>
+					<li>Protecting your online accounts and privacy can help prevent cyberbullying and harassment. Securing your accounts and managing your online presence can contribute to a safer and more positive digital experience.</li>
+				</ul>
+
+			<li class="fade-in"><strong> Family Safety:</strong>
+				<ul>
+					<li>If you have a family, their online safety is also a concern. Educating yourself about online security helps you guide and protect your family members from potential threats.</li>
+				</ul>
+
+				<content>
+					<h1 class="title">Password Management Tool</h1>
+					<p class="centered-text">Manage all your passwords in one space with ease - ensuring you're safe and secure</p>
+
+						<form id="passwordForm">
+            			<label for="websiteInput">Website:</label>
+           				<input type="text" id="websiteInput" required>
+
+						   <label for="passwordInput">Password:</label>
+						   <input type="password" id="passwordInput" required>
+			   
+						   <button type="button" onclick="addPasswordToList()">Add Password</button>
+					   </form>
+			   
+					   <table id="passwordTable">
+						   <thead>
+							   <tr>
+								   <th>Website</th>
+								   <th>Password</th>
+								   <th>Password Strength</th>
+							   </tr>
+						   </thead>
+						   <tbody id="passwordList"></tbody>
+					   </table>
+    					</div>
+
+
+		<h1 class="title">Contact Us</h1>
+		<div id="content">
+		<form id="contact">
+			<label for="name">Your name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+
+			<label>How did you hear about us?</label>
+            <input type="checkbox" id="google" name="heardHow" value="Google">
+            <label for="google">Google</label>
+            <input type="checkbox" id="friend" name="heardHow" value="Friend">
+            <label for="friend">A friend</label>
+            <input type="checkbox" id="other" name="heardHow" value="Other">
+            <label for="other">Other</label>
+
+			<input type="submit">
+
+
+		</form>
+		</div>
+
+	</content>
+
+
+	<script src="index.js"></script>
+
+</body>
+</html>
